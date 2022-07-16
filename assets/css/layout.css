@@ -8,7 +8,7 @@
 }
 
 /* header */
-#header .group-gnb .inner::after {
+#header .group-gnb::after {
   content: '';
   display: block;
   clear: both;
@@ -75,10 +75,7 @@
   height: 120px;
   background: #fff;
 }
-#header .group-search .inner {
-  height: 100%;
-}
-#header .group-search .inner::after {
+#header .group-search::after {
   content: '';
   display: block;
   clear: both;
@@ -166,7 +163,7 @@
   border: 1px solid #afcfea;
   box-sizing: border-box;
 }
-#header .language-area .link-go {
+#header .language-area .btn-go {
   float: left;
   width: 30px;
   height: 21px;
@@ -186,19 +183,17 @@
 }
 #header .weather-area .ico-weather {
   float: left;
-  margin: 3px 5px 0 0;
-  width: 58px;
-  height: 47px;
-  background: url("../images/ico_weather.png") no-repeat center;
+  margin: 5px 15px 0 0;
 }
 #header .weather-area .weather-info {
   overflow: hidden;
+  margin-top: 5px;
 }
 #header .weather-area .weather-info .info-box {
   display: block;
 }
 #header .weather-area .info-box + .info-box {
-  margin-top: 12px;
+  margin-top: 7px;
 }
 #header .weather-area .degree {
   font-size: 25px;
@@ -218,28 +213,31 @@
 }
 
 /* footer */
-#footer .group-nav {
+#footer .group-corp {
   padding: 15px 0;
 }
-#footer .group-nav .inner::after {
+#footer .group-corp::after {
   content: '';
   display: block;
   clear: both;
 }
-#footer .group-nav .corp-list {
+#footer .group-corp .corp-list {
   float: left;
   position: relative;
   top: 7px;
 }
-#footer .group-nav .corp-list::after {
+#footer .group-corp .corp-list::after {
   content: '';
   display: block;
   clear: both;
 }
-#footer .group-nav .corp-item {
+#footer .group-corp .corp-item {
   position: relative;
   float: left;
   padding: 0 10px;
+}
+#footer .group-corp .corp-item:nth-child(1) {
+  padding-left: 0;
 }
 #footer .corp-item + .corp-item::before {
   content: '';
@@ -251,25 +249,25 @@
   margin-top: -6px;
   background: #dcdcdc;
 }
-#footer .group-nav .link-corp {
+#footer .group-corp .link-corp {
   font-size: 12px;
   color: #636363;
 }
-#footer .group-nav .link-corp > strong {
+#footer .group-corp .link-corp > strong {
   color: #000;
   font-weight: 700;
 }
 
-#footer .group-nav .sns-list {
+#footer .group-corp .sns-list {
   float: right;
   margin-right: -12px;
 }
-#footer .group-nav .sns-list::after {
+#footer .group-corp .sns-list::after {
   content: '';
   display: block;
   clear: both;
 }
-#footer .group-nav .sns-item {
+#footer .group-corp .sns-item {
   float: left;
   margin-right: 12px;
 }
@@ -315,19 +313,20 @@
 #footer .sns-item:hover.naverblog .ico-sns {
   background-position: -150px -25px;
 }
-#footer .group-info .inner {
+#footer .group-addr {
   padding: 22px 0;
   border-top: 1px solid #ccc;
+  color: #636363;
 }
-#footer .group-info .inner::after {
+#footer .group-addr::after {
   content: '';
   display: block;
   clear: both;
 }
-#footer .group-info .call-area {
+#footer .group-addr .call-area {
   float: left;
 }
-#footer .group-info .call-info::before {
+#footer .call-area .info-box::before {
   content: '';
   display: inline-block;
   width: 108px;
@@ -335,23 +334,22 @@
   margin-right: 40px;
   background-position: -180px 0;
 }
-#footer .group-info .address-area {
+#footer .group-addr .address-area {
   float: left;
 }
-#footer .group-info .address {
-  padding-bottom: 6px;
+#footer .group-addr .address {
+  padding-bottom: 2px;
   font-size: 12px;
-  color: #636363;
 }
-#footer .group-info .address a {
+#footer .group-addr .address .map {
   font-size: 11px;
   font-weight: 400;
 }
-#footer .group-info .copyright {
+#footer .group-addr .copyright {
   clear: both;
   font-size: 11px;
 }
-#footer .group-info .logo-area {
+#footer .group-addr .logo-area {
   float: right;
 }
 #footer .logo-area .link-logo + .link-logo {

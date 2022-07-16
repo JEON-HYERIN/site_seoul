@@ -1,5 +1,5 @@
 /* font - Nanum Gothic */
-/* @font-face {
+@font-face {
   font-family: 'Nanum Gothic';
   src: url('../fonts/NanumGothic-Regular.woff2');
   font-weight: 400;
@@ -13,13 +13,14 @@
   font-family: 'Nanum Gothic';
     src: url('../fonts/NanumGothic-ExtraBold.woff2');
   font-weight: 800;
-} */
+}
 
 body {
   min-width: 320px;
   font-family: 'Nanum Gothic';
   font-size: 14px;
   font-weight: 400;
+  line-height: 1.35em;
   color: #222;
 }
 /* skip-nav */
@@ -47,15 +48,20 @@ body {
   overflow: hidden;
   clip: rect(0 0 0 0);
 }
+.common-inner {
+  position: relative;
+  width: 1152px;
+  margin: 0 auto;
+}
 .inner {
   position: relative;
   width: 1152px;
   margin: 0 auto;
-  min-width: 1152px;
 }
 .sc-title {
   font-size: 24px;
   font-weight: 700;
+  line-height: 1.35em;
 }
 .btn {
   margin: 0;
@@ -92,23 +98,21 @@ i[class*="ico-"] {
 }
 
 /* storage */
-.sc-event .title-area .link-more,
-.sc-program .title-area .link-more,
+.sc-event .link-more,
 #header .group-gnb .logo a::before,
 #header .group-search .btn-search .ico-search,
-.sc-news .title-area .link-all,
+.sc-news .link-all,
 .sc-sidebanner .btn-prev .ico-btn,
 .sc-sidebanner .btn-next .ico-btn,
-.sc-sidebanner .btn-play .ico-play,
-.sc-sidebanner .btn-pause .ico-pause,
-#footer .group-info .call-info::before {
+.sc-sidebanner .btn-control .ico-control,
+#footer .call-area .info-box::before {
   background-image: url("../images/sp_bg.png");
   background-size: 300px 300px;
   background-repeat: no-repeat;
 }
 
-.ico-news,
-.ico-join {
+.sc-visual .slide-title .ico-news,
+.sc-visual .slide-title .ico-join {
   background-image: url("../images/icon_main.png");
   background-size: 300px 300px;
   background-repeat: no-repeat;
