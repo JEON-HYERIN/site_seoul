@@ -5,25 +5,38 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>서울특별시 - 동행·매력 특별시 서울</title>
-  <!-- FAVICON -->
-  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
-  <!-- SLICK -->
+  <!-- Slick -->
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <!-- CSS -->
   <link rel="stylesheet" href="./assets/css/layout.css" />
   <link rel="stylesheet" href="./assets/css/main.css" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
 </head>
 <body>
-
+  <div id="skip-nav">
+    <a href="#visual">비주얼 슬라이드 영역 바로가기</a>
+    <a href="#status">코로나19 현황 바로가기</a>
+    <a href="#mayor">시장 영역 바로가기</a>
+    <a href="#service">주요 서비스 바로가기</a>
+    <a href="#center">센터 정보 바로가기</a>
+    <a href="#event1">이벤트 신청 바로가기</a>
+    <a href="#event2">이달의 행사 및 축제 바로가기</a>
+    <a href="#often">자주 찾는 서비스 바로가기</a>
+    <a href="#category">분야별정보 바로가기</a>
+    <a href="#news">새소식 바로가기</a>
+    <a href="#seoul">서울 소식과 미디어 바로가기</a>
+    <a href="#sidebanner">광고배너 바로가기</a>
+    <a href="#site">관련 사이트 바로가기</a>
+  </div>
   <div id="wrapper">
-    <a href="#main" id="skip-nav">본문 바로가기</a>
     <!-- HEADER -->
     <header id="header">
       <div class="common-inner">
         <div class="group-gnb">
           <div class="logo-area">
             <h1 class="logo">
-              <a href="#">
+              <a href="./index.html">
                 <span class="blind">서울특별시</span>
               </a>
             </h1>
@@ -121,7 +134,7 @@
         <div class="inner1">
           <div class="column-left">
             <!-- visual -->
-            <section class="sc-visual">
+            <section id="visual" class="sc-visual">
               <h2 class="blind">비주얼 슬라이드 영역</h2>
               <div class="slide-area slide1 active">
                 <h3 class="slide-title">
@@ -314,7 +327,7 @@
           </div>
           <div class="column-right">
             <!-- status -->
-            <section class="sc-status">
+            <section id="status" class="sc-status">
               <h2 class="blind">코로나19 현황</h2>
               <a href="#" class="corona-area">
                 <div class="corona-info">
@@ -340,7 +353,7 @@
               </a>
             </div>
             <!-- mayor -->
-            <section class="sc-mayor">
+            <section id="mayor" class="sc-mayor">
               <h2 class="blind">시장 영역</h2>
               <a href="#" class="mayor-area">
                 <span class="blind">동행·매력 특별시 서울 서울특별시장 오세훈입니다.</span>
@@ -357,7 +370,7 @@
           </div>
         </div>
         <!-- service -->
-        <section class="sc-service">
+        <section id="service" class="sc-service">
           <div class="title-area">
             <h2 class="sc-title">주요 서비스</h2>
           </div>
@@ -433,7 +446,7 @@
         </section>
       </div>
       <!-- center -->
-      <section class="sc-center">
+      <section id="center" class="sc-center">
         <div class="common-inner">
           <h2 class="blind">센터 정보</h2>
           <a href="#" class="center-area">
@@ -451,11 +464,10 @@
           </a>
         </div>
       </section>
-      <!-- common-inner -->
       <div class="common-inner">
         <div class="inner2">
           <!-- event -->
-          <section class="sc-event">
+          <section id="event1" class="sc-event">
             <div class="title-area">
               <h2 class="sc-title">이벤트 신청</h2>
             </div>
@@ -486,7 +498,7 @@
             </a>
           </section>
           <!-- event -->
-          <section class="sc-event">
+          <section id="event2" class="sc-event">
             <div class="title-area">
               <h2 class="sc-title">이달의 행사 및 축제</h2>
             </div>
@@ -517,9 +529,9 @@
             </a>
           </section>
           <!-- often -->
-          <section class="sc-often">
+          <section id="often" class="sc-often">
             <div class="title-area">
-              <h2 class="sc-title">자주 찾은 서비스</h2>
+              <h2 class="sc-title">자주 찾는 서비스</h2>
             </div>
             <ul class="service-list">
               <li class="service-item">
@@ -556,7 +568,7 @@
           </section>
         </div>
         <!-- category -->
-        <section class="sc-category">
+        <section id="category" class="sc-category">
           <div class="title-area">
             <h2 class="sc-title">분야별정보</h2>
           </div>
@@ -612,7 +624,7 @@
           </ul>
         </section>
         <!-- news -->
-        <section class="sc-news">
+        <section id="news" class="sc-news">
           <div class="title-area">
             <h2 class="sc-title">새소식</h2>
           </div>
@@ -705,7 +717,7 @@
           <a href="#" class="link-all">전체보기</a>
         </section>
         <!-- seoul -->
-        <section class="sc-seoul">
+        <section id="seoul" class="sc-seoul">
           <h2 class="blind">서울 소식과 미디어</h2>
           <div class="group-video">
             <div class="title-area">
@@ -794,7 +806,7 @@
           </div>
         </section>
         <!-- sidebanner -->
-        <section class="sc-sidebanner">
+        <section id="sidebanner" class="sc-sidebanner">
           <h2 class="blind">광고배너</h2>
           <div class="inner">
             <div class="sidebanner-slider">
@@ -855,7 +867,7 @@
           </div>
         </section>
         <!-- site -->
-        <section class="sc-site">
+        <section id="site" class="sc-site">
           <h2 class="blind">관련 사이트</h2>
           <div class="inner">
             <ul class="tab-list">
