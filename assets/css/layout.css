@@ -424,6 +424,10 @@
   float: right;
 }
 
+#footer .logo-area .link-logo {
+  display: inline-block;
+}
+
 #footer .logo-area .link-logo+.link-logo {
   margin-left: 10px;
 }
